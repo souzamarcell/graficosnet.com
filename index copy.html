@@ -405,7 +405,9 @@
   }
 
   .header-inner {
-    display: block;
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
   }
 
   .header-photo {
@@ -415,11 +417,11 @@
     object-fit: cover;
     border: 2px solid rgba(0,212,255,0.3);
     box-shadow: 0 0 24px rgba(0,212,255,0.15);
-    float: right;
-    margin: 4px 0 16px 24px;
+    flex-shrink: 0;
+    margin-top: 4px;
   }
 
-  .header-text { display: block; }
+  .header-text { flex: 1; }
 
 </style>
 </head>
@@ -435,9 +437,9 @@
         <h1>Marcell<br>Souza</h1>
         <p class="header-title">Analista de Segurança da Informação & Infraestrutura de TI · +25 anos de experiência</p>
         <div class="contact-row">
-      <a href="/cdn-cgi/l/email-protection#87eae6f5e4e2ebeba9f5e6eae8f4c7e0eae6eeeba9e4e8ea" class="contact-item">
+      <a href="mailto:marcell.ramos@gmail.com" class="contact-item">
         <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        <span class="__cf_email__" data-cfemail="aec3cfdccdcbc2c280dccfc3c1ddeec9c3cfc7c280cdc1c3">[email&#160;protected]</span>
+        marcell.ramos@gmail.com
       </a>
       <a href="https://www.linkedin.com/in/marcellsouza" target="_blank" class="contact-item">
         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -705,3 +707,13 @@
           <span class="lang-name">Inglês</span>
           <span class="lang-level">Intermediário</span>
         </div>
+      </section>
+
+    </aside>
+  </div>
+</div>
+
+<button class="print-btn" onclick="window.print()">&#x2193; Imprimir / PDF</button>
+
+</body>
+</html>
