@@ -274,8 +274,7 @@ content_html = """
 # Modify scripts to inject translations for BOTH index and programa
 # Since index.html has a specific LANG object, we will inject new keys directly into it in our new file.
 
-scripts = scripts.replace("const LANG = {", """const LANG = {
-        pt: {
+scripts = scripts.replace("pt: {", """pt: {
           '.prog-eyebrow': 'Programa de Assessoria',
           '.prog-h1': 'Programa de Assessoria de <br /><em>Gestão Integrada</em>',
           '.prog-sub': 'Desenvolvimento contínuo para empresas que querem evoluir de forma estruturada.',
